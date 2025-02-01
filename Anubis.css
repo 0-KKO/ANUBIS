@@ -1,1 +1,146 @@
+/* ضبط التصميم العام */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e5ec; /* لون خلفية عام */
+    margin: 0;
+    padding: 0;
+}
 
+/* 🔹 الهيدر */
+header {
+    background-color: #6c7a89; /* أزرق رمادي لامع */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* 🔹 شريط التنقل */
+nav {
+    background-color: #4a6572; /* أزرق رمادي غير لامع */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #34495e;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #2c3e50;
+    transform: scale(1.1);
+}
+
+/* 🔹 ضبط الـ Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* 🔹 ضبط جميع الـ Sections بحيث تكون تحت بعض */
+.sections-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* عرض مناسب */
+    gap: 30px; /* مسافة بين الـ Sections */
+}
+
+/* 🔹 تصميم الـ Section */
+section {
+    background: linear-gradient(to right, #ffffff, #d3d3d3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: -20px; /* يخرج قليلًا عن مكانه */
+}
+
+/* 🔹 تنسيق الأزرار داخل السكشن */
+section button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+section button:hover {
+    transform: scale(1.1);
+}
+
+button.signup {
+    background-color: #2ecc71;
+    color: white;
+}
+
+button.login {
+    background-color: #3498db;
+    color: white;
+}
+
+/* 🔹 ضبط تصميم الروابط الخاصة بالتواصل */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 100px;
+}
+
+/* 🔹 تأثير عند التفاعل مع الروابط */
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+/* ألوان خاصة بكل منصة */
+.discord { background-color: #7289da; }
+.gmail { background-color: #D14836; } /* لون Gmail */
+.facebook { background-color: #3b5998; }
+.instagram { background-color: #e4405f; }
+.snapchat { background-color: #fffc00; color: black; }
+
+/* 🔹 ضبط تصميم الـ Aside */
+aside {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+}
+
+/* 🔹 تصميم الفوتر */
+footer {
+    background-color: #6c7a89; /* نفس لون الهيدر */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    margin-top: 40px;
+}
